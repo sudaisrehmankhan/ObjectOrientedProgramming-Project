@@ -31,8 +31,7 @@ Customers can interact with the store in a more limited but user-friendly way:
 
 Each user must authenticate themselves to gain access to their respective dashboard.
 
----
-Authentication System
+--Authentication System
 
 The authentication mechanism ensures that:
 - Only authorized admins can manage the store
@@ -40,8 +39,36 @@ The authentication mechanism ensures that:
 - User data is stored securely (usually using basic file handling for beginners)
 
 ---
-OOP Concepts Used
 
+--GUI Version (Qt Creator)
+
+In addition to the console-based version, a Graphical User Interface (GUI) for the Online Store System has been developed using Qt Creator. The GUI provides a more user-friendly experience, though it is currently in its early stage of development.
+
+--Current Features:
+
+Basic GUI layout for login and role selection
+Simple Admin and Customer dashboards
+Product listing interface
+
+--Features Under Development / Planned:
+Full integration of Admin and Customer features into the GUI
+Data synchronization between GUI and file system
+Improved UI/UX design with better input validation and feedback
+Real-time product updates and order placement via GUI
+
+--Note:
+The GUI version is currently a work in progress, and contributions or suggestions for improvement are welcome. The console version remains fully functional and complete, while the GUI version aims to enhance usability and modernize the interface.
+
+/ConsoleVersion
+    - main.cpp
+    - Admin.h/.cpp
+/GUIVersion
+    - mainwindow.ui
+    - mainwindow.cpp
+    - OnlineStore.pro
+
+ 
+OOP Concepts Used
 This project was designed as a demonstration of Object-Oriented Programming (OOP) in C++. The following principles and features are implemented:
 
 - **Classes and Objects:** Core building blocks for Admin, Customer, Product, Order, etc.
